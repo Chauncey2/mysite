@@ -4,7 +4,8 @@ from django.utils import timezone
 
 
 class Question(models.Model):
-    questtion_text = models.CharField(max_length= 200)
+
+    questtion_text = models.CharField(max_length=200)
     pub_date=models.DateTimeField('date published')
 
     def __str__(self):
